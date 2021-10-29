@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- 纯粹用来填充的 -->
     <div class="navContainer">
         <div class="header">
             <div class="navBar">
@@ -111,6 +110,7 @@
             <div class="insideItemContainer">
 
                 <h3 class="littleTitle">热门推荐</h3>
+
                 <div class="littleItem">
                     <a href="#"><img src="./img/cat.gif" alt="cat">短毛猫</a>
                 </div>
@@ -171,6 +171,8 @@
                 </div>
             </div>
         </div>
+        <!-- 右侧导航栏 -->
+
 
         <!-- 榜单商品 -->
         <div class="top-goods">
@@ -256,11 +258,11 @@
                         </div>
 
                         <div class="buyicon">
-                            <div class="buyicon-pirce" id="now-price1">
+                            <div class="buyicon-pirce now-price" id="now-price1">
                                 <span class="red-text" style="color: red;">¥2999</span>
-                                <del>¥3199</del>
+                                <del class="del-text">¥3199</del>
                             </div>
-                            <a href="#">抢购中</a>
+                            <a href="#" class="buyicon-link">抢购中</a>
                         </div>
                     </a>
                 </div>
@@ -278,7 +280,13 @@
                             </div>
                             <div class="sale-card-gauge-count font-weight-medium">已抢10%</div>
                         </div>
-                        <div class="buyicon"></div>
+                        <div class="buyicon">
+                            <div class="buyicon-pirce now-price" id="now-price1">
+                                <span class="red-text" style="color: red;">¥1199</span>
+                                <del class="del-text">¥2199</del>
+                            </div>
+                            <a href="#" class="buyicon-link">抢购中</a>
+                        </div>
                     </a>
                 </div>
 
@@ -296,7 +304,13 @@
                             </div>
                             <div class="sale-card-gauge-count font-weight-medium">已抢5%</div>
                         </div>
-                        <div class="buyicon"></div>
+                        <div class="buyicon">
+                            <div class="buyicon-pirce now-price" id="now-price1">
+                                <span class="red-text" style="color: red;">¥2</span>
+                                <del class="del-text">¥20</del>
+                            </div>
+                            <a href="#" class="buyicon-link">抢购中</a>
+                        </div>
                     </a>
                 </div>
                 <div class="limit-goods-box">
@@ -312,7 +326,13 @@
                             </div>
                             <div class="sale-card-gauge-count font-weight-medium">已抢1%</div>
                         </div>
-                        <div class="buyicon"></div>
+                        <div class="buyicon">
+                            <div class="buyicon-pirce now-price" id="now-price1">
+                                <span class="red-text" style="color: red;">¥29</span>
+                                <del class="del-text">¥49</del>
+                            </div>
+                            <a href="#" class="buyicon-link">抢购中</a>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -471,45 +491,148 @@
         <div class="common-display-box">
             <div class="head-title"><span>OnePlus专区</span></div>
             <div class="nav-topic">
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
             </div>
-            <div class="content-goods"></div>
+            <div class="content-goods">
+                <!-- <img src="https://dsfs.oppo.com/archives/202107/2021072706070260ffe6ba1b998.png" alt=""> -->
+                <div class="head-goods"><a href="#"><img
+                            src="https://dsfs.oppo.com/archives/202107/2021072706070260ffe6ba1b998.png" alt=""></a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
         <!-- realme专区 -->
         <div class="common-display-box">
             <div class="head-title"><span>realme专区</span></div>
             <div class="nav-topic">
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
             </div>
-            <div class="content-goods"></div>
-        </div>
-        <!-- 智能好物 -->
-        <div class="common-display-box">
-            <div class="head-title"><span>智能好物</span></div>
-            <div class="nav-topic">
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
+            <div class="content-goods">
+                <!-- <img src="https://dsfs.oppo.com/archives/202107/2021072706070260ffe6ba1b998.png" alt=""> -->
+                <div class="head-goods"><a href="#"><img
+                            src="https://dsfs.oppo.com/archives/202107/2021072706070260ffe6ba1b998.png" alt=""></a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="content-goods"></div>
         </div>
         <!-- 潮流好物 -->
         <div class="common-display-box">
             <div class="head-title"><span>潮流好物</span></div>
             <div class="nav-topic">
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
-                <div class="category-tab"></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
+                <div class="category-tab"><a href="#">OPPO系列</a></div>
             </div>
-            <div class="content-goods"></div>
+            <div class="content-goods">
+                <!-- <img src="https://dsfs.oppo.com/archives/202107/2021072706070260ffe6ba1b998.png" alt=""> -->
+                <div class="head-goods"><a href="#"><img
+                            src="https://dsfs.oppo.com/archives/202107/2021072706070260ffe6ba1b998.png" alt=""></a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="common-goods">
+                    <a href="#">
+                        <img src="https://dsfs.oppo.com/omp/1634111622807-_-3b31ad16a55646c8aee08a16be493bd0.png"
+                            alt="">
+                        <p class="common-goods-title">Reno6 夏日晴海</p>
+                        <div class="common-goods-subtitle">
+                            <span>补贴价</span>
+                            <span class="now-price-font">￥2699</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end 主体 -->
@@ -517,62 +640,92 @@
     <div class="footer">
         <!-- 优势说明 -->
         <div class="advantages">
-            <div class="advantage">1</div>
-            <div class="advantage">2</div>
-            <div class="advantage">3</div>
-            <div class="advantage">4</div>
-            <div class="advantage">5</div>
+            <div class="advantage">
+                <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/04210c8.svg">
+                <p>1年全国联保</p>
+            </div>
+            <div class="advantage">
+                <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/04210c8.svg">
+                <p>7天无理由退货</p>
+            </div>
+            <div class="advantage">
+                <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/04210c8.svg">
+                <p>官方换货保障</p>
+            </div>
+            <div class="advantage">
+                <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/04210c8.svg">
+                <p>满69元包邮</p>
+            </div>
+            <div class="advantage">
+                <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/04210c8.svg">
+                <p>916 家售后网点</p>
+            </div>
         </div>
         <hr>
         <!-- 列表 -->
         <div class="footer-content">
             <!-- 产品说明 -->
             <div class="product-list">
+
                 <ul class="footer-product-list-title">OPPO产品
-                    <li class="footer-product-list-content">1</li>
-                    <li class="footer-product-list-content">2</li>
-                    <li class="footer-product-list-content">3</li>
-                    <li class="footer-product-list-content">4</li>
-                    <li class="footer-product-list-content">5</li>
+                    <li class="footer-product-list-content"><a href="#">OPPO Reno6</a></li>
+                    <li class="footer-product-list-content"><a href="#">OPPO Reno6</a></li>
+                    <li class="footer-product-list-content"><a href="#">OPPO Reno6</a></li>
+                    <li class="footer-product-list-content"><a href="#">OPPO Reno6</a></li>
+                    <li class="footer-product-list-content"><a href="#">OPPO Reno6</a></li>
+                    <li class="footer-product-list-content"><a href="#">OPPO Reno6</a></li>
                 </ul>
-                <ul class="footer-product-list-title">OPPO产品
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
+
+                <ul class="footer-product-list-title">一加产品
+                    <li class="footer-product-list-content"><a href="#">一加 9RT</a></li>
+                    <li class="footer-product-list-content"><a href="#">一加 9RT</a></li>
+                    <li class="footer-product-list-content"><a href="#">一加 9RT</a></li>
+                    <li class="footer-product-list-content"><a href="#">一加 9RT</a></li>
+                    <li class="footer-product-list-content"><a href="#">一加 9RT</a></li>
                 </ul>
-                <ul class="footer-product-list-title">OPPO产品
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
+                
+                <ul class="footer-product-list-title">realme产品
+                    <li class="footer-product-list-content"><a href="#">真我GT Neo2</a></li>
+                    <li class="footer-product-list-content"><a href="#">真我GT Neo2</a></li>
+                    <li class="footer-product-list-content"><a href="#">真我GT Neo2</a></li>
+                    <li class="footer-product-list-content"><a href="#">真我GT Neo2</a></li>
+                    <li class="footer-product-list-content"><a href="#">真我GT Neo2</a></li>
                 </ul>
-                <ul class="footer-product-list-title">OPPO产品
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
-                    <li class="footer-product-list-content"></li>
+                <ul class="footer-product-list-title">服务政策
+                    <li class="footer-product-list-content"><a href="#">配送发货说明</a></li>
+                    <li class="footer-product-list-content"><a href="#">花呗分期说明</a></li>
+                    <li class="footer-product-list-content"><a href="#">电子发票说明</a></li>
+                    <li class="footer-product-list-content"><a href="#">电子发票说明</a></li>
                 </ul>
             </div>
             <!-- 在线客服 -->
             <div class="online-man">
-                在线客服
+                <div class="online-man-button">
+                    <button>
+                        <img src="https://dsfs.oppo.com/oppo/shop-pc-v2/main/img/b5d8f97.svg" >
+                        <span class="online-man-title">在线客服</span>    
+                    </button>
+                </div>
+                <div>
+                    <p class="telnumber">400-1999-666</p>
+                </div>
+                <div>
+                    <p class="online-man-tel">24小时全国热线</p>
+                </div>
             </div>
         </div>
         <!-- 版权 -->
         <hr>
         <div class="copyright">
-            <div class="copyright-top">
-                <span>111</span>
-
-            </div>
             <div class="copyright-bottom">
-                © 2021 欢太 版权所有 粤ICP备14012291号 |隐私政策|用户使用协议|资质证照|知识产权
+                <span>© 2021 欢太 版权所有 粤ICP备14012291号</span>
+                <span>|<a href="#"> 隐私政策 </a>|<a href="#"> 用户使用协议 </a> | <a href="#"> 资质证照 </a> | <a href="#"> 知识产权 </a></span>
 
-                粤公网安备 44190002004935号
+                <br>
+                <div>
+                    <img src="https://dsfs.oppo.com/oppo/images/common/police-25797632ad.png" >
+                    <a href="#" class="security">粤公网安备 44190002004935号</a>
+                </div>
             </div>
         </div>
     </div>

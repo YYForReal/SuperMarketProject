@@ -444,15 +444,13 @@ a{
 /* 限时秒杀 */
 .mainContainer .limit-goods{
     width: 100%;
-    height: 450px;
-    background-color: red;
-    margin-top: 20px;
+    height: 420px;
+    margin-top: 40px;
 }
 
 .mainContainer .limit-goods .limit-goods-title{
     width: 100%;
     height: 40px;
-    background-color: grey;
     line-height: 40px;
 }
 
@@ -462,7 +460,6 @@ a{
     width: 50px;
     height: 40px;
     font-size: 25px;
-    background-color: orange;
     padding-left: 2px;
 }
 
@@ -471,15 +468,13 @@ a{
     float: right;
     width: 90px;
     height: 40px;
-    background-color: pink;
     color: #757575;
 }
 
 .mainContainer .limit-goods .limit-goods-content{
     display: flex;
-    background-color: skyblue;
     width: 100%;
-    height: 400px;
+    height: 360px;
     justify-content: space-between;
 }
 
@@ -498,7 +493,6 @@ a{
 .limit-goods-onsale{
     height: 100px;
     width: 100%;
-    background-color: green;
 }
 .limit-goods-onsale .timer{
     float: left;
@@ -568,7 +562,6 @@ a{
     width: 10px;
     background-color: #F54A53;
     color: white;
-    
 }
 
 .limit-goods-list-pending{
@@ -635,20 +628,42 @@ a{
     margin-top: 20px;
 }
 .limit-goods-box .buyicon .now-price{
-    width: 60px;
+    width: 100px;
     height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
-
+.limit-goods-box .del-text{
+    font-size: 12px;
+}
+.sale-card-gauge-count{
+    color: grey;
+}
 .limit-goods-box .buyicon .now-price .red-text{
     color: red;
+    font-size: 1.2em;
 }
+.limit-goods-box .buyicon .buyicon-link{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 35px;
+    background-color:red;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 5px;   
+    margin-top: 10px;
+}
+
 
 /* 热卖专区 */
 .hot-show{
     height: 419px;
     min-width: 1200px;
     margin-top: 30px;
-    background-color: blue;
 }
 
 .hot-show .hot-show-title{
@@ -657,7 +672,6 @@ a{
     line-height: 100px;
     font-size: 25px;
     font-weight: 500;
-    background-color: #fff;
 }
 
 .hot-show .hot-show-goods{
@@ -671,7 +685,6 @@ a{
     justify-content: space-between;
     width: 100%;
     height: 150px;
-    background-color: pink;
     margin: 2px auto;
 }
 
@@ -739,7 +752,6 @@ a{
     justify-content: space-between;
     width: 100%;
     height: 300px;
-    background-color: tomato;
     margin-top: 10px;
 }
 
@@ -748,7 +760,6 @@ a{
     min-width: 500px;
     width: 49%;
     height: 300px;
-    background-color: turquoise;
 }
 
 .two-banner .one-ban img{
@@ -765,7 +776,6 @@ a{
 .common-display-box .head-title{
     width: 100%;
     height: 96px;
-    background-color: green;
     font-size: 24px;
     line-height: 96px;
 }
@@ -775,7 +785,6 @@ a{
     width: 100%;
     height: 30px;
     font-size: 18px;
-    background-color: rgb(139, 89, 89);
 }
 
 .common-display-box .nav-topic .category-tab{
@@ -797,7 +806,6 @@ a{
     display: block;
     width: 100%;
     min-height: 300px;
-    background-color: pink;
     margin-top: 10px;
 }
 
@@ -835,13 +843,13 @@ a{
     text-align: center;
     margin:0 auto;
 }
+
 /* 页脚 */
 .footer{
     display: block;
     min-width: 1000px;
     max-width: 1300px;
     min-height: 600px;
-    background-color: green;
     margin: 0 auto;
 }
 
@@ -849,8 +857,7 @@ a{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 217px;
-    background-color: #fff;
+    height: 130px;
     outline: 1px grey;
 }
 
@@ -858,13 +865,21 @@ a{
     display: inline-block;
     width: 200px;
     height: 150px;
-    background-color: skyblue;
+    text-align: center;
 }
+.footer .advantages .advantage img{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+.footer .advantages .advantage p{
+    margin-top: 0;
+}
+
 
 .footer .footer-content{
     width: 100%;
     height: 300px;
-    background-color:hotpink;
 }
 
 .footer .footer-content .product-list{  
@@ -877,27 +892,66 @@ a{
 }
 .footer .footer-content .product-list ul{  
     list-style: none;
+    font-size: larger;
+    width: 160px;
+    font-weight: 500;
+    margin-right: 15px;
 }
 .footer .footer-content .product-list li{  
-    margin: 3px 2px;
+    margin: 15px 0px;
+    font-size: large;
+    font-weight: 400;
 }
+.footer .footer-content .product-list li a{
+    color: #757575;
+}
+
 .footer .footer-content .online-man{  
-    min-width: 300px;
+    min-width: 200px;
     height: 300px;
     float: right;
-    background-color: orange;
+}
+.online-man-button{
+    float: right;
+}
+
+.footer .footer-content .online-man button{
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    width: 180px;
+    height: 50px;
+    background-color: black;
+    border-radius: 28px;
+}  
+
+.online-man-title{
+    color: white;
+    font-size: large;
+    z-index: 100;
+}
+
+.telnumber{
+    float: right;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.online-man-tel{
+    float: right;
+    font-size: medium;
+    margin-top: 0;
 }
 
 /* 版权 */
 .footer .copyright{
     width: 100%;
     height: 300px;
-    background-color: indianred;
+    color: rgb(85, 84, 84);
+    font-size: 14px;
 }
-.footer .copyright-top{
-    width: 100%;
-    height: 100px;
-    display: flex;
+.footer .copyright a{
+    color: rgb(80, 80, 80);
 }
-
-
+.footer .copyright .security{
+    margin-top: 5px;
+}
