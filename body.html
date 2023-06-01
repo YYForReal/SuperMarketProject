@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 轮播图+侧边菜单栏的区域 */
+.mainBody{
+    position: relative;
+    width: 100%;
+    height: 604px;
+}
+
+.mainBody img{
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.mainBody .sideMenu {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 10px;
+    opacity:0.9;
+    overflow: hidden;
+}
+
+.mainBody .sideMenu ul {
+    width: 240px;
+    height: 487px;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+.mainBody .sideMenu li{
+    display: block;
+    list-style-type: none;
+    height: 35px;
+    margin: 0;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+.mainBody .sideMenu li:hover{
+    background-color: #eee;
+}
+
+.mainBody .sideMenu li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.mainBody .sideMenu li a img{
+    position: absolute;    
+    height: 30px;
+    width: 30px;
+    right: 12px;
+    top: 5px;
+}
+
+.mainBody .insideItem {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 300px;
+    width: 800px;
+    height: 500px;
+    opacity: 0.9;
+}
+.mainBody .insideItem .insideItemContainer{
+    position: absolute;
+    background-color: #fff;
+    width: 700px;
+    height: 500px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.mainBody .sideMenu:hover+.insideItem{
+    display: block;
+}
+
+
+.mainBody .insideItem .littleTitle{
+    padding-left: 30px;
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+.mainBody .insideItem .littleItem{
+    margin-left: 2px;
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+}
+.mainBody .insideItem .littleItem:hover{
+    outline: 1px solid skyblue;
+}
+
+
+.mainBody .insideItem .littleItem a{
+    color: black;
+    height: 60px;
+    line-height: 60px;
+}
+
+.mainBody .insideItem .littleItem img{
+    width: 80px;
+    height: 50px;
+    vertical-align: top ;
+    margin-right: 5px;
+    margin-top:5px;
+}
+
+.mainBody .insideItem:hover{
+    display: block;
+}
+
+.mainBody .sideMenu li>a{
+    color: #272727;
+}
+
+.mainBody .sideMenu a:hover{
+    color: black;
+    font-size: larger;
+}
+    </style>
+</head>
+<body>
+        <!-- 轮播图+侧边菜单栏开始 -->
+        <div class="mainBody">
+            <a href="#"><img src="./img/bgimg.jpg" alt="bgimg"></a>
+            <div class="sideMenu">
+                <ul>
+                    <li>
+                        <a href="#">热门推荐<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">OPPO<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">OnePlus<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">realme<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">耳机影音<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">原装配件<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">智能穿戴<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">智能电视<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">日用百货<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">数码周边<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">家用电器<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">个护健康<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">家纺餐厨<img src="./img/next.png"></a>
+                    </li>
+                    <li>
+                        <a href="#">母婴亲子<img src="./img/next.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="insideItem">
+                <div class="insideItemContainer">
+    
+                    <h3 class="littleTitle">热门推荐</h3>
+    
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">短毛猫</a>
+                    </div>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">长毛猫</a>
+                    </div>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">麝香猫</a>
+                    </div>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">英短猫</a>
+                    </div>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">折耳猫</a>
+                    </div>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">波斯猫</a>
+                    </div>
+                    <h3 class="littleTitle">OPPO专区</h3>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">折耳猫</a>
+                    </div>
+                    <div class="littleItem">
+                        <a href="#"><img src="./img/cat.gif" alt="cat">波斯猫</a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+</body>
+</html>
